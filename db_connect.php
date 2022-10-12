@@ -1,15 +1,14 @@
 <?php
 $servername = "localhost";
-$username = "fabadmin";
-$password = "NJ0-S/Hxe_g!]9GC";
-$dbname = "feedback";
+$username = "your_username";
+$password = "your_password";
+$dbname = "your_db_name";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-date_default_timezone_set('Europe/Istanbul');
+date_default_timezone_set('Europe/Istanbul'); // Change to your TIME_ZONE
 $now_date = date('Y-m-d');
 $now_time = date('H:i:s');
-//$now_time = date('')
 
 // if ($conn->connect_error) {
 //   die("Connection failed: " . $conn->connect_error);
